@@ -103,7 +103,7 @@ const score_quiz = () => {
 
     const resultsdiv = document.getElementById('results');
     resultsdiv.innerHTML = `<h3 class="mt-5 mb-4">Your personal spiritual gifts inventory</h3>` + html_scores;
-    resultsdiv.scrollIntoView({ behavior: 'smooth', block: 'top' });
+    resultsdiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
 
