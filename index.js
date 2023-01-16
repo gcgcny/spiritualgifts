@@ -39,7 +39,7 @@ document.getElementById('qcontainer').innerHTML = html_questions;
 // score quiz
 const score_quiz = () => {
     // get all the question types
-    let categories = SURVEY.adults.map((q) => q.category);
+    let categories = SURVEY[version].map((q) => q.category);
 
     // get unique categories
     categories = [...new Set(categories)];
