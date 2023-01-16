@@ -5,3 +5,11 @@ body {
 .fw-medium {
     font-weight: 500;
 }
+
+.fs-small {
+    font-size: 0.75rem;
+}
+
+.bg-babyblue {
+    background-color: #bbdcff;
+}

@@ -74,10 +74,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "I have interpreted tongues so as to help others worship God without confusion",
-            "category": "Tongues(Interpreting)"
+            "category": "Tongues (Interpreting)"
         }, {
             "question": "Sometimes when I pray, it seems as if the Spirit steps in and prays in words I cannot understand",
-            "category": "Tongues (speaking"
+            "category": "Tongues (speaking)"
         }, {
             "question": "I have felt an unusual presence of God and personal confidence when important decisions needed to be made.",
             "category": "Wisdom"
@@ -158,10 +158,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "Sometimes when a person speaks in tongues, I get an idea about what God is saying.",
-            "category": "Tongues(Interpreting)"
+            "category": "Tongues (Interpreting)"
         }, {
             "question": "I can speak to God in a language I have never learned.",
-            "category": "Tongues (speaking"
+            "category": "Tongues (speaking)"
         }, {
             "question": "Sometimes God gives me an insight into the proper course of action others should take.",
             "category": "Wisdom"
@@ -242,10 +242,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "When others have prayed in tongues, I felt that I understood the meaning of their prayer.",
-            "category": "Tongues(Interpreting)"
+            "category": "Tongues (Interpreting)"
         }, {
             "question": "Praying in tongues has been meaningful to me in my personal prayer life.",
-            "category": "Tongues (speaking"
+            "category": "Tongues (speaking)"
         }, {
             "question": "When a person has a problem I can frequently guide him or her to the best Biblical solution.",
             "category": "Wisdom"
@@ -326,10 +326,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "When I hear others speak in tongues, I am compelled to explain the meaning.",
-            "category": "Tongues(Interpreting)"
+            "category": "Tongues (Interpreting)"
         }, {
             "question": "When I give a public message in tongues. I expect it to be interpreted. ",
-            "category": "Tongues (speaking"
+            "category": "Tongues (speaking)"
         }, {
             "question": "I feel that I have a special insight in selecting the best alternative in a difficult situation. ",
             "category": "Wisdom"
@@ -410,10 +410,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "My interpretation of tongues has been confirmed by mature believers. ",
-            "category": "Tongues(Interpreting)"
+            "category": "Tongues (Interpreting)"
         }, {
             "question": "When I speak in tongues, I believe it is edifying to the group I am with. ",
-            "category": "Tongues (speaking"
+            "category": "Tongues (speaking)"
         }, {
             "question": "People with spiritual problems seem to come to me for advice and counsel. ",
             "category": "Wisdom"
