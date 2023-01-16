@@ -10,7 +10,7 @@ const question_component = (question, category, index) => {
     return `<div class="card my-4">
         <div class="card-body">
           <div class="card-title mb-4 fw-medium">
-            ${question}
+            ${index+1}. ${question}
           </div>
           <div class="d-flex justify-content-between">
             ${radiobuttons}
@@ -78,6 +78,21 @@ const score_quiz = () => {
     resultsdiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
+const update_main_progress = () => {
+    let progress = localStorage.getItem('progress-' + VERSION);
+    if (progress) {
+        progress = JSON.parse(progress);
+        progress = progress.length;
+    } else {
+        progress = 0;
+    }
+    
+    let totalqs = SURVEY[VERSION].length;
+
+    document.getElementById("mainprogressbar").style.width = (progress/totalqs*100) + '%';
+    document.getElementById("mainprogresstext").innerText = progress + ' / ' + totalqs;
+};
+
 
 // loop through questions and write to screen
 let html_questions = SURVEY[VERSION].map((q, i) => {
@@ -104,6 +119,8 @@ if (progress) {
     for (let sel of progress) {
         document.getElementById(sel).checked = true;
     }
+
+    update_main_progress();
 }
 
 
@@ -121,9 +138,10 @@ document.querySelectorAll('.btn-check').forEach((el) => {
 
         localStorage.setItem('progress-'
             + VERSION, JSON.stringify(progress));
+
+        update_main_progress();
     });
 });
-
 
 // bind clear event
 document.getElementById('btnClear').addEventListener('click', (e) => {
@@ -133,4 +151,5 @@ document.getElementById('btnClear').addEventListener('click', (e) => {
         el.checked = false;
     });
     document.getElementById('results').innerText = "";
+    update_main_progress();
 });
