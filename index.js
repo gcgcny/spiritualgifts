@@ -16,8 +16,12 @@ const question_component = (question, category, index) => {
             ${radiobuttons}
             </div>
           <div class="row fs-small mt-1">
+          ${VERSION == 'adult' ? `
             <div class="col">Not me at all</div>
-            <div class="col text-end">100% me</div>
+            <div class="col text-end">100% me</div>` : `
+            <div class="col">NOPE</div>
+            <div class="col text-end">IT ME</div>`
+}
           </div>
         </div>
       </div>`
@@ -99,6 +103,7 @@ let html_questions = SURVEY[VERSION].map((q, i) => {
     return question_component(q.question, q.category, i);
 }).join('');
 document.getElementById('qcontainer').innerHTML = html_questions;
+update_main_progress();
 
 
 // bind submit button
