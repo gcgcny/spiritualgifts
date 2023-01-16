@@ -4,30 +4,6 @@ if (VERSION != 'adult' && VERSION != 'youth') {
     VERSION = 'adult';
 }
 
-// question component
-// const question_component = (question, category) => `
-//       <div class="card my-4">
-//         <div class="card-body">
-//           <h5 class="card-title mb-4 fw-medium">
-//             ${question}
-//           </h5>
-//           <input
-//             type="range"
-//             class="form-range question-range"
-//             min="0"
-//             max="10"
-//             step="1"
-//             value="0"
-//             data-category="${category}"
-//           />
-//           <div class="row">
-//             <div class="col">Not really</div>
-//             <div class="col text-center">Sometimes</div>
-//             <div class="col text-end">Often</div>
-//           </div>
-//         </div>
-//       </div>`;
-
 const question_component = (question, category, index) => {
     let radiobuttons = Array(10).fill(1).map((_, i) => `<input type="radio" class="btn-check" name="question${index}" autocomplete="off" value="${i}" id="c${index}-${i}" data-category="${category}"><label class="btn btn-outline-secondary btn-sm" for="c${index}-${i}">${i + 1}</label>`).join('');
 
@@ -85,10 +61,6 @@ const score_quiz = () => {
     });
 
     // write scores to screen
-    // let html_scores = `<table class="mt-5">` + Object.keys(scores).map((category) => `
-    // <tr><th class="pe-3">${category}</th><td>${scores[category]}</td></tr>`).join('') + `</table>`;
-
-    // write scores to screen
     let max_score = Object.keys(scores).reduce((max, category) => Math.max(max, scores[category]), 0);
     let html_scores = Object.keys(scores).map((category) => {
         let width = scores[category] / max_score * 100;
@@ -130,7 +102,6 @@ if (progress) {
 
     // loop through the progress and set the values
     for (let sel of progress) {
-        console.log(sel);
         document.getElementById(sel).checked = true;
     }
 }
