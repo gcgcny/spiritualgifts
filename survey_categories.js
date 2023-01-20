@@ -52,7 +52,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Craftmanship / Artisan":{
+        "Craftmanship":{
             "Blurb":"Craftsmanship / Artist - The gift that gives the believer the skill to create artistic expressions that produce a spiritual response of strength and inspiration. Skilled Craft - the gift that enables a believer to create, build, maintain, or repair items used within the church. The divine enablement to creatively design and/or construct items to be used for ministry or the divine enablement to communicate God's truth through a variety of art forms.",
             "Attributes":[
                 {"attribute": "work with wood, cloth, paint, metal, glass, and other raw materials "},
@@ -73,7 +73,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Discernment / Distinguishing Sprits":{
+        "Discernment":{
             "Blurb":"Discernment / Distinguishing of Spirits - The special ability God gives to some to know with assurance whether certain behavior or teaching is from God, Satan, human error, or human power. The divine enablement to distinguish between truth and error, to discern the spirits, differentiating between good and evil, right and wrong.",
             "Attributes":[
                 {"attribute": "distinguish truth from error, right from wrong, pure motives from impure "},
@@ -113,7 +113,7 @@ const CATEGORY = {
                 {"Gift": "Exhortation"}
             ]
         },
-        "Evangelism / Evangelist":{
+        "Evangelism":{
             "Blurb":"Evangelism / Evangelist - The special ability God gives to some to proclaim the Gospel of salvation effectively so that people respond to the promises of Christ through conversion to Christianity. The divine enablement to effectively communicate the gospel to unbelievers so they respond in faith and move toward discipleship.  ",
             "Attributes":[
                 {"attribute": "communicate the message of Christ with clarity and conviction"},
@@ -211,7 +211,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Helps / Serving":{
+        "Helps":{
             "Blurb":"Helps / Serving (Serving Gift) - The gift that enables a believer to work gladly behind the scenes in order that God's work is fulfilled. The special ability God gives to some to serve the church in a supporting roll or to invest their talents in the life and ministry of other members of the body enabling them to increase their effectiveness. The divine enablement to accomplish practical and necessary tasks which free-up, support, and meet the needs of others. ",
             "Attributes":[
                 {"attribute": "serve behind the scenes whenever needed to support the gifts and ministries of others (without having to be asked) "},
@@ -254,7 +254,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Intercession / Prayer":{
+        "Prayer":{
             "Blurb":"Intercession / Prayer (Serving Gift) - The special ability God gives to some to pray for extended periods of time on a regular basis and see frequent and specific answers to their prayers to a degree much greater than that which is expected of the average Christian. The divine enablement to consistently pray on behalf of and for others, seeing frequent and specific results.",
             "Attributes":[
                 {"attribute": "feel compelled to earnestly pray on behalf of someone or some cause "},
@@ -277,7 +277,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Knowledge ":{
+        "Knowledge":{
             "Blurb":"Knowledge (Speaking Gift) - The special gift whereby the Spirit enables certain Christians to understand in an exceptional way the great truths of God's Word and to make them relevant to specific situations in the church. Also, the desire to seek out and learn as much about the Bible as possible through gathering much information and the analysis of that data. The divine enablement to bring truth to the body through a revelation or Biblical insight. ",
             "Attributes":[
                 {"attribute": "receive truth which enables them to better serve the body "},
@@ -301,7 +301,7 @@ const CATEGORY = {
                 {"Gift": "Wisdom"}
             ]
         },
-        "Leadership ":{
+        "Leadership":{
             "Blurb":"Leadership (Serving Gift) - The special ability God gives to some to set goals in accordance with God's purpose and to communicate these goals to others in such a way that they voluntarily and harmoniously work together to accomplish these goals for the glory of God. The divine enablement to cast vision, motivate, and direct people to harmoniously accomplish the purposes of God. ",
             "Attributes":[
                 {"attribute": "provide direction for God's people or ministry"},
@@ -319,7 +319,7 @@ const CATEGORY = {
                 {"Gift": "Administration"}
             ]
         },
-        "Mercy / Compassion":{
+        "Mercy":{
             "Blurb":"Mercy / Compassion (Serving Gift) - The special gift whereby the Spirit enables certain Christians to feel exceptional empathy and compassion for those who are suffering (physically, mentally, or emotionally) so as to feel genuine sympathy for their misery, speaking words of compassion, but more so caring for them with acts of love that help alleviate their distress. The divine enablement to cheerfully and practically help those who are suffering or are in need by putting compassion into action.",
             "Attributes":[
                 {"attribute": "focus upon alleviating the sources of pain or discomfort in suffering people "},
@@ -340,7 +340,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Miracles ":{
+        "Miracles":{
             "Blurb":"Miracles (Sign Gift) - The special ability God gives to some to serve as a human intermediary through whom He pleases to perform acts of supernatural power that are recognized by others to have altered the ordinary course of nature and authenticated the divine commission. ",
             "Attributes":[
                 {"attribute": "speak God's truth and may have it authenticated by an accompanying miracle "},
@@ -408,7 +408,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Pastor / Shepherd":{
+        "Pastoring":{
             "Blurb":"Pastor / Shepherd - The special ability God gives to some to assume a long-term personal responsibility for leadership and the spiritual care, protection, guidance, and feeding (teaching) of a group of believers. The divine enablement to nurture, care for, and guide people toward on-going spiritual maturity and becoming like Christ. ",
             "Attributes":[
                 {"attribute": "take responsibility to nurture the whole person in their walk with God"},
@@ -429,7 +429,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Poverty (voluntary)":{
+        "Poverty":{
             "Blurb":"Poverty (voluntary) - The special ability God gives to some to purposely live an impoverished lifestyle to serve and aid others with their material resources. The special ability that God gives to some members of the body of Christ to renounce material comfort and luxury and adopt a personal lifestyle equivalent to those living at the poverty level in a given society in order to serve God more effectively. ",
             "Attributes":[
                 {"attribute": "will often choose to live among people who are considered poverty-stricken "},
@@ -445,7 +445,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Prophet / Prophecy":{
+        "Prophesy":{
             "Blurb":"Prophet / Prophecy (Special Gift) - The special ability God gives to some to proclaim the Word of God with clarity and to apply it fearlessly with a view to the strengthening, encouragement, and comfort of believers and the convincing of unbelievers. The special gift whereby the Spirit empowers certain Christians to interpret and apply God's revelation in a given situation.  The divine enablement to reveal truth and proclaim it in a timely and relevant manner for understanding, correction, repentance, or edification. There may be immediate or future implications. ",
             "Attributes":[
                 {"attribute": "expose sin or deception in others for the purpose of reconciliation "},
@@ -468,7 +468,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Teaching / Teacher":{
+        "Teaching":{
             "Blurb":"Teaching / Teacher - The special ability God gives to some to explain the truths of the Word of God clearly and to apply them effectively so that those taught understand and learn. To instruct others in the Bible in a logical and systematic way so as to communicate pertinent information for true understanding and growth. The divine enablement to understand, clearly explain, and apply the word of God causing greater Christ-likeness in the lives of listeners. ",
             "Attributes":[
                 {"attribute": "communicate Biblical truth that inspires greater obedience to the word "},
@@ -487,7 +487,7 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Tongues (interpreting)":{
+        "Tongues_Interpreting":{
             "Blurb":"Tongues (interpreting) - The special ability God gives to some translate the message of one who speaks in tongues. If a tongue is spoken without an interpretation, the speaker is edified. If the tongue is interpreted, it is for the edification of the body.  ",
             "Attributes":[
                 {"attribute": "express with an interpretation a word by the Spirit which edifies the Bod"},
@@ -502,7 +502,7 @@ const CATEGORY = {
                 {"Gift": "Tongues (speaking)"}
             ]
         },
-        "Tongues (speaking)":{
+        "Tongues_speaking":{
             "Blurb":"Tongues (speaking) - The special ability God gives to some to speak prayer or praise in a language they have never learned or to communicate a message from God to His people. The special ability God gives to some to speak in a language not previously learned so unbelievers can hear God's message in their own language. If a tongue is spoken without an interpretation, the speaker is edified. If the tongue is interpreted, it is for the edification of the body.  ",
             "Attributes":[
                 {"attribute": "may receive a spontaneous message from God which is made known to His body through the gift of interpretation"},
@@ -528,7 +528,7 @@ const CATEGORY = {
                 {"Gift": "Tongues (interpreting)"}
             ]
         },
-        "Wisdom ":{
+        "Wisdom":{
             "Blurb":"Wisdom (Speaking Gift) - The gift that allows the believer to sort through opinions, facts, and thoughts in order to determine what solution would be best for the individual believer or the community of believers. The ability to apply knowledge to life in such a way as to make spiritual truths quite relevant and practical in proper decision making and daily life situations. The special ability that God gives to certain members of the body of Christ to know the mind of the Holy Spirit in such a way as to receive insight into how knowledge may best be applied to specific needs arising in the body of Christ. ",
             "Attributes":[
                 {"attribute": "focus on the unseen consequences in determining the next steps to take"},
@@ -572,7 +572,7 @@ const CATEGORY = {
     },
     "youth":{
         "Administration":{
-            "Blurb":"This is the spiritual gift where the Spirit enables certain Christians to organize, administrate, and promote the various affairs of the local church's ministry to direct them effectively. A local church cannot grow beyond a certain point without the ministry of these individuals. ",
+            "Blurb":"Administration: This is the spiritual gift where the Spirit enables certain Christians to organize, administrate, and promote the various affairs of the local church's ministry to direct them effectively. A local church cannot grow beyond a certain point without the ministry of these individuals. ",
             "Attributes":[
             ],
             "References":[
@@ -584,7 +584,7 @@ const CATEGORY = {
             ]
         },
         "Discernment":{
-            "Blurb":"This is the spiritual gift where the Spirit enables certain Christians to know with without a doubt whether a statement or behavior is of God, Satan, or man.",
+            "Blurb":"Discernment: This is the spiritual gift where the Spirit enables certain Christians to know with without a doubt whether a statement or behavior is of God, Satan, or man.",
             "Attributes":[
             ],
             "References":[
@@ -597,7 +597,7 @@ const CATEGORY = {
             ]
         },
         "Evangelism":{
-            "Blurb":"This is the spiritual gift where the Spirit enables particular Christians to share the Gospel to unbelievers and burdens Christians about soul-winning. All Christians are called to witness for Christ whether they have this gift or not.",
+            "Blurb":"Evangelism: This is the spiritual gift where the Spirit enables particular Christians to share the Gospel to unbelievers and burdens Christians about soul-winning. All Christians are called to witness for Christ whether they have this gift or not.",
             "Attributes":[
             ],
             "References":[
@@ -611,7 +611,7 @@ const CATEGORY = {
             ]
         },
         "Exhortation":{
-            "Blurb":"This is the spiritual gift where the Spirit enables certain Christians to deliver challenging and encouraging words.",
+            "Blurb":"Exhortation: This is the spiritual gift where the Spirit enables certain Christians to deliver challenging and encouraging words.",
             "Attributes":[
             ],
             "References":[
@@ -624,7 +624,7 @@ const CATEGORY = {
             ]
         },
         "Faith":{
-            "Blurb":"This is the spiritual gift where the Spirit provides Christians with great confidence to believe and expect great things from God.",
+            "Blurb":"Faith: This is the spiritual gift where the Spirit provides Christians with great confidence to believe and expect great things from God.",
             "Attributes":[
             ],
             "References":[
@@ -637,7 +637,7 @@ const CATEGORY = {
             ]
         },
         "Giving":{
-            "Blurb":"This is the spiritual gift where the Spirit enables certain Christians to accumulate and give large amounts of their finances to the glory of God.",
+            "Blurb":"Giving: This is the spiritual gift where the Spirit enables certain Christians to accumulate and give large amounts of their finances to the glory of God.",
             "Attributes":[
             ],
             "References":[
@@ -650,8 +650,8 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Helps/Serving/Ministering":{
-            "Blurb":"This is the spiritual gift where the Spirit empowers certain Christians to render practical help in both physical and spiritual matters. Serving one another, like evangelism, is a calling of all Christians, but there are some who have a special desire to serve, and receive great blessing from it.",
+        "Helps":{
+            "Blurb":"Helps/Serving/Ministering: This is the spiritual gift where the Spirit empowers certain Christians to render practical help in both physical and spiritual matters. Serving one another, like evangelism, is a calling of all Christians, but there are some who have a special desire to serve, and receive great blessing from it.",
             "Attributes":[
             ],
             "References":[
@@ -662,8 +662,8 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Mercy / Compassion":{
-            "Blurb":"This is the spiritual gift where the Spirit enables certain Christians to minister to and have compassion for those who are suffering or afflicted.",
+        "Mercy":{
+            "Blurb":"Mercy / Compassion: This is the spiritual gift where the Spirit enables certain Christians to minister to and have compassion for those who are suffering or afflicted.",
             "Attributes":[
             ],
             "References":[
@@ -673,8 +673,8 @@ const CATEGORY = {
             "SeeAlso":[
             ]
         },
-        "Pastoring / Shepherding":{
-            "Blurb":"This is the spiritual gift where the Spirit enables certain Christians to preach and teach the Word of God and to take responsibility for the spiritual welfare of a body of believers.",
+        "Pastoring":{
+            "Blurb":"Pastoring / Shepherding: This is the spiritual gift where the Spirit enables certain Christians to preach and teach the Word of God and to take responsibility for the spiritual welfare of a body of believers.",
             "Attributes":[
             ],
             "References":[

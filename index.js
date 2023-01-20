@@ -10,7 +10,7 @@ const question_component = (question, category, index) => {
     return `<div class="card my-4">
         <div class="card-body">
           <div class="card-title mb-4 fw-medium">
-            ${index+1}. ${question}
+            ${index + 1}. ${question}
           </div>
           <div class="d-flex justify-content-between">
             ${radiobuttons}
@@ -21,20 +21,78 @@ const question_component = (question, category, index) => {
             <div class="col text-end">100% me</div>` : `
             <div class="col">NOPE</div>
             <div class="col text-end">IT ME</div>`
-}
+        }
           </div>
         </div>
       </div>`
 };
 
-const progress_component = (width, text) => `
-<div class="progress my-2" style="height: 1.5rem;">
+const generateCard = (gift) => {
+    // Retrieve the gift information
+    const giftInfo = CATEGORY.adult[gift];
+
+    if (!giftInfo) {
+        console.error(`Gift ${gift} not found`);
+        return;
+    }
+
+    // Create the card container
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    // Create the Blurb element
+    const blurb = document.createElement("p");
+    blurb.classList.add("blurb");
+    blurb.innerHTML = giftInfo.Blurb;
+
+    // Create the Attributes header
+    const attributesHeader = document.createElement("h4");
+    attributesHeader.innerHTML = "Attributes";
+
+    // Create the Attributes element
+    const attributes = document.createElement("ul");
+    attributes.classList.add("attributes");
+    for (let i = 0; i < giftInfo.Attributes.length; i++) {
+        let attribute = document.createElement("li");
+        attribute.innerHTML = giftInfo.Attributes[i].attribute;
+        attributes.appendChild(attribute);
+    }
+
+    // Create the References header
+    const referencesHeader = document.createElement("h4");
+    referencesHeader.innerHTML = "References";
+
+    // Create the References element
+    const references = document.createElement("ul");
+    references.classList.add("references");
+    for (let i = 0; i < giftInfo.References.length; i++) {
+        let reference = document.createElement("li");
+        reference.innerHTML = giftInfo.References[i].ref;
+        references.appendChild(reference);
+    }
+    // Append the elements to the card
+    card.appendChild(blurb);
+    card.appendChild(attributesHeader);
+    card.appendChild(attributes);
+    card.appendChild(referencesHeader);
+    card.appendChild(references);
+
+    // Return the generated card HTML
+    return card.innerHTML;
+};
+
+const progress_component = (width, text, category) => `
+<div class="progress my-2" style="height: 1.5rem;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${category}" aria-expanded="false" aria-controls="collapse${category}">
     <div
         class="progress-bar bg-babyblue text-nowrap"
         role="progressbar"
         style="width: ${width}%"
     ></div>
     <div class="justify-content-left align-self-center ps-4 d-flex position-absolute w-100 fs-6 fw-medium">${text}</div>
+</div>
+
+<div class="collapse" id="collapse${category}">
+    <div class="card card-body">${generateCard(category)}</div>
 </div>`;
 
 // score quiz
@@ -68,7 +126,7 @@ const score_quiz = () => {
     let max_score = Object.keys(scores).reduce((max, category) => Math.max(max, scores[category]), 0);
     let html_scores = Object.keys(scores).map((category) => {
         let width = scores[category] / max_score * 100;
-        return [width, progress_component(width, category + ': ' + scores[category])];
+        return [width, progress_component(width, category + ': ' + scores[category], category)];
     });
 
     // sort by width
@@ -78,8 +136,12 @@ const score_quiz = () => {
     html_scores = html_scores.map((s) => s[1]).join('');
 
     const resultsdiv = document.getElementById('results');
-    resultsdiv.innerHTML = `<h3 class="mt-5 mb-4">Your personal spiritual gifts inventory</h3>` + html_scores;
+    resultsdiv.innerHTML = `<h3 class="mt-5 mb-4">Your personal spiritual gifts inventory </h3>
+    <p><b>(Click to see definitions)</b></p>` + html_scores;
     resultsdiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // biblegateway reftagger
+    BGLinks.linkVerses();
 };
 
 const update_main_progress = () => {
@@ -90,10 +152,10 @@ const update_main_progress = () => {
     } else {
         progress = 0;
     }
-    
+
     let totalqs = SURVEY[VERSION].length;
 
-    document.getElementById("mainprogressbar").style.width = (progress/totalqs*100) + '%';
+    document.getElementById("mainprogressbar").style.width = (progress / totalqs * 100) + '%';
     document.getElementById("mainprogresstext").innerText = progress + ' / ' + totalqs;
 };
 
@@ -158,3 +220,4 @@ document.getElementById('btnClear').addEventListener('click', (e) => {
     document.getElementById('results').innerText = "";
     update_main_progress();
 });
+

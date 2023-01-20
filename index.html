@@ -19,15 +19,16 @@
     <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container mx-auto" style="max-width: 600px; width: 95%;">
+    <div class="container mx-auto" style="max-width: 600px; width: 95%">
       <h1 class="fw-bold">Spiritual gifts survey</h1>
       <div class="fw-medium">
         <p>
-        Respond to each question with how well these statements describe you,
-        from 1 (not you at all) to 10 (very much you).
+          Respond to each question with how well these statements describe you,
+          from 1 (not you at all) to 10 (very much you).
         </p>
         <p>
-            Your answers are automatically saved locally on your device, in case you need to pause and continue at a later time!
+          Your answers are automatically saved locally on your device, in case
+          you need to pause and continue at a later time!
         </p>
       </div>
       <div class="text-end">
@@ -45,7 +46,10 @@
       </div>
     </div>
 
-    <footer class="footer position-fixed mt-auto bg-light pt-3 w-100" style="bottom:0; height: 45px;">
+    <footer
+      class="footer position-fixed mt-auto bg-light pt-3 w-100"
+      style="bottom: 0; height: 45px"
+    >
       <div class="container w-75">
         <div class="progress">
           <div
@@ -57,9 +61,7 @@
           <div
             class="justify-content-center align-self-center d-flex w-75 position-absolute fs-6 fw-medium"
             id="mainprogresstext"
-          >
-            
-          </div>
+          ></div>
         </div>
       </div>
     </footer>
@@ -70,6 +72,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="survey_questions.js"></script>
+    <script src="survey_categories.js"></script>
+    <script
+      src="https://www.biblegateway.com/public/link-to-us/tooltips/bglinks.js"
+      type="text/javascript"
+    ></script>
     <script src="index.js"></script>
+    <script type="text/javascript">
+      BGLinks.version = "NIV";
+    </script>
   </body>
 </html>
