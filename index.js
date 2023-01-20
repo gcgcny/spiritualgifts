@@ -10,7 +10,7 @@ const question_component = (question, category, index) => {
     return `<div class="card my-4">
         <div class="card-body">
           <div class="card-title mb-4 fw-medium">
-            ${index+1}. ${question}
+            ${index + 1}. ${question}
           </div>
           <div class="d-flex justify-content-between">
             ${radiobuttons}
@@ -21,7 +21,7 @@ const question_component = (question, category, index) => {
             <div class="col text-end">100% me</div>` : `
             <div class="col">NOPE</div>
             <div class="col text-end">IT ME</div>`
-}
+        }
           </div>
         </div>
       </div>`
@@ -29,38 +29,44 @@ const question_component = (question, category, index) => {
 
 const generateCard = (gift) => {
     // Retrieve the gift information
-    var giftInfo = CATEGORY.adult[gift];
+    const giftInfo = CATEGORY.adult[gift];
 
-    if(!giftInfo) {
+    if (!giftInfo) {
         console.error(`Gift ${gift} not found`);
         return;
     }
+
     // Create the card container
-    var card = document.createElement("div");
+    const card = document.createElement("div");
     card.classList.add("card");
+
     // Create the Blurb element
-    var blurb = document.createElement("p");
+    const blurb = document.createElement("p");
     blurb.classList.add("blurb");
     blurb.innerHTML = giftInfo.Blurb;
+
     // Create the Attributes header
-    var attributesHeader = document.createElement("h4");
+    const attributesHeader = document.createElement("h4");
     attributesHeader.innerHTML = "Attributes";
+
     // Create the Attributes element
-    var attributes = document.createElement("ul");
+    const attributes = document.createElement("ul");
     attributes.classList.add("attributes");
-    for (var i = 0; i < giftInfo.Attributes.length; i++) {
-        var attribute = document.createElement("li");
+    for (let i = 0; i < giftInfo.Attributes.length; i++) {
+        let attribute = document.createElement("li");
         attribute.innerHTML = giftInfo.Attributes[i].attribute;
         attributes.appendChild(attribute);
     }
+
     // Create the References header
-    var referencesHeader = document.createElement("h4");
+    const referencesHeader = document.createElement("h4");
     referencesHeader.innerHTML = "References";
+
     // Create the References element
-    var references = document.createElement("ul");
+    const references = document.createElement("ul");
     references.classList.add("references");
-    for (var i = 0; i < giftInfo.References.length; i++) {
-        var reference = document.createElement("li");
+    for (let i = 0; i < giftInfo.References.length; i++) {
+        let reference = document.createElement("li");
         reference.innerHTML = giftInfo.References[i].ref;
         references.appendChild(reference);
     }
@@ -70,12 +76,12 @@ const generateCard = (gift) => {
     card.appendChild(attributes);
     card.appendChild(referencesHeader);
     card.appendChild(references);
+
     // Return the generated card HTML
     return card.innerHTML;
-}
+};
 
-const progress_component = (width, text, category,) => `
-
+const progress_component = (width, text, category) => `
 <div class="progress my-2" style="height: 1.5rem;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${category}" aria-expanded="false" aria-controls="collapse${category}">
     <div
         class="progress-bar bg-babyblue text-nowrap"
@@ -85,14 +91,9 @@ const progress_component = (width, text, category,) => `
     <div class="justify-content-left align-self-center ps-4 d-flex position-absolute w-100 fs-6 fw-medium">${text}</div>
 </div>
 
-
-<div> 
 <div class="collapse" id="collapse${category}">
-<div class="card card-body"> 
-`+ generateCard(category) +
-`</div>
-</div>
-`;
+    <div class="card card-body">${generateCard(category)}</div>
+</div>`;
 
 // score quiz
 const score_quiz = () => {
@@ -138,6 +139,9 @@ const score_quiz = () => {
     resultsdiv.innerHTML = `<h3 class="mt-5 mb-4">Your personal spiritual gifts inventory </h3>
     <p><b>(Click to see definitions)</b></p>` + html_scores;
     resultsdiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // biblegateway reftagger
+    BGLinks.linkVerses();
 };
 
 const update_main_progress = () => {
@@ -148,10 +152,10 @@ const update_main_progress = () => {
     } else {
         progress = 0;
     }
-    
+
     let totalqs = SURVEY[VERSION].length;
 
-    document.getElementById("mainprogressbar").style.width = (progress/totalqs*100) + '%';
+    document.getElementById("mainprogressbar").style.width = (progress / totalqs * 100) + '%';
     document.getElementById("mainprogresstext").innerText = progress + ' / ' + totalqs;
 };
 
@@ -216,3 +220,4 @@ document.getElementById('btnClear').addEventListener('click', (e) => {
     document.getElementById('results').innerText = "";
     update_main_progress();
 });
+
