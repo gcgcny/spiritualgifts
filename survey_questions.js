@@ -444,7 +444,7 @@ const SURVEY = {
             "category": "Giving"
         }, {
             "question": "I enjoy working behind the scenes and supporting the work of others. ",
-            "category": "Helps/Serving/Ministering"
+            "category": "Helps"
         }, {
             "question": "I am a very caring person and always sympathize with other people.",
             "category": "Mercy"
@@ -474,7 +474,7 @@ const SURVEY = {
             "category": "Giving"
         }, {
             "question": "I enjoy doing routine tasks that support the ministry. ",
-            "category": "Helps/Serving/Ministering"
+            "category": "Helps"
         }, {
             "question": "I am a patient person, but I respond quickly to help those in need. ",
             "category": "Mercy"
@@ -504,7 +504,7 @@ const SURVEY = {
             "category": "Giving"
         }, {
             "question": "I feel like I am a part of my church even when i do routine tasks like cleaning, painting, or yardwork.",
-            "category": "Helps/Serving/Ministering"
+            "category": "Helps"
         }, {
             "question": "I enjoy helping people who others think of as 'undeserving' or beyond help.",
             "category": "Mercy"
@@ -534,7 +534,7 @@ const SURVEY = {
             "category": "Giving"
         }, {
             "question": "I usually do lots of things that help people.",
-            "category": "Helps/Serving/Ministering"
+            "category": "Helps"
         }, {
             "question": "It is important to me to comfort others when they are hurt. ",
             "category": "Mercy"
@@ -564,7 +564,7 @@ const SURVEY = {
             "category": "Giving"
         }, {
             "question": "I like to find small things that need to be done and often do them without being asked. ",
-            "category": "Helps/Serving/Ministering"
+            "category": "Helps"
         }, {
             "question": "I can look beyond a person's handicaps or problems to see a life that matters to God. ",
             "category": "Mercy"
@@ -594,7 +594,7 @@ const SURVEY = {
             "category": "Giving"
         }, {
             "question": "I don't wish to be the leader of the most popular person in school or at church. I like being on of the crowd. ",
-            "category": "Helps/Serving/Ministering"
+            "category": "Helps"
         }, {
             "question": "I enjoy bringing hope and joy to people living in difficult situations.",
             "category": "Mercy"
@@ -624,7 +624,7 @@ const SURVEY = {
             "category": "Giving"
         }, {
             "question": "I readily and happily use any of my skills to help wherever needed. ",
-            "category": "Helps/Serving/Ministering"
+            "category": "Helps"
         }, {
             "question": "I act on feelings rather than facts. ",
             "category": "Mercy"
@@ -654,7 +654,7 @@ const SURVEY = {
             "category": "Giving"
         }, {
             "question": "I am excited and willing to serve others when I am needed to . ",
-            "category": "Helps/Serving/Ministering"
+            "category": "Helps"
         }, {
             "question": "Other people know that I care about them. I always try to have a loving attitude.",
             "category": "Mercy"
