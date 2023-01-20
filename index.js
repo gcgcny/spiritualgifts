@@ -27,15 +27,72 @@ const question_component = (question, category, index) => {
       </div>`
 };
 
-const progress_component = (width, text) => `
-<div class="progress my-2" style="height: 1.5rem;">
+const generateCard = (gift) => {
+    // Retrieve the gift information
+    var giftInfo = CATEGORY.adult[gift];
+
+    if(!giftInfo) {
+        console.error(`Gift ${gift} not found`);
+        return;
+    }
+    // Create the card container
+    var card = document.createElement("div");
+    card.classList.add("card");
+    // Create the Blurb element
+    var blurb = document.createElement("p");
+    blurb.classList.add("blurb");
+    blurb.innerHTML = giftInfo.Blurb;
+    // Create the Attributes header
+    var attributesHeader = document.createElement("h4");
+    attributesHeader.innerHTML = "Attributes";
+    // Create the Attributes element
+    var attributes = document.createElement("ul");
+    attributes.classList.add("attributes");
+    for (var i = 0; i < giftInfo.Attributes.length; i++) {
+        var attribute = document.createElement("li");
+        attribute.innerHTML = giftInfo.Attributes[i].attribute;
+        attributes.appendChild(attribute);
+    }
+    // Create the References header
+    var referencesHeader = document.createElement("h4");
+    referencesHeader.innerHTML = "References";
+    // Create the References element
+    var references = document.createElement("ul");
+    references.classList.add("references");
+    for (var i = 0; i < giftInfo.References.length; i++) {
+        var reference = document.createElement("li");
+        reference.innerHTML = giftInfo.References[i].ref;
+        references.appendChild(reference);
+    }
+    // Append the elements to the card
+    card.appendChild(blurb);
+    card.appendChild(attributesHeader);
+    card.appendChild(attributes);
+    card.appendChild(referencesHeader);
+    card.appendChild(references);
+    // Return the generated card HTML
+    return card.innerHTML;
+}
+
+const progress_component = (width, text, category,) => `
+
+<div class="progress my-2" style="height: 1.5rem;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${category}" aria-expanded="false" aria-controls="collapse${category}">
     <div
         class="progress-bar bg-babyblue text-nowrap"
         role="progressbar"
         style="width: ${width}%"
     ></div>
     <div class="justify-content-left align-self-center ps-4 d-flex position-absolute w-100 fs-6 fw-medium">${text}</div>
-</div>`;
+</div>
+
+
+<div> 
+<div class="collapse" id="collapse${category}">
+<div class="card card-body"> 
+`+ generateCard(category) +
+`</div>
+</div>
+`;
 
 // score quiz
 const score_quiz = () => {
@@ -68,7 +125,7 @@ const score_quiz = () => {
     let max_score = Object.keys(scores).reduce((max, category) => Math.max(max, scores[category]), 0);
     let html_scores = Object.keys(scores).map((category) => {
         let width = scores[category] / max_score * 100;
-        return [width, progress_component(width, category + ': ' + scores[category])];
+        return [width, progress_component(width, category + ': ' + scores[category], category)];
     });
 
     // sort by width
@@ -78,7 +135,8 @@ const score_quiz = () => {
     html_scores = html_scores.map((s) => s[1]).join('');
 
     const resultsdiv = document.getElementById('results');
-    resultsdiv.innerHTML = `<h3 class="mt-5 mb-4">Your personal spiritual gifts inventory</h3>` + html_scores;
+    resultsdiv.innerHTML = `<h3 class="mt-5 mb-4">Your personal spiritual gifts inventory </h3>
+    <p><b>(Click to see definitions)</b></p>` + html_scores;
     resultsdiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 

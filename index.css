@@ -14,3 +14,8 @@ body {
 .bg-babyblue {
     background-color: #bbdcff;
 }
+
+.progress-bar {
+    background: #bbdcff;
+    color:black
+}

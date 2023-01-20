@@ -2,7 +2,7 @@ const SURVEY = {
     "adult": [
         {
             "question": "People come to me when they need help in desperate situations, and I am able to recommend a ministry that can help.",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I feel empowered to stand-alone for Christ in a hostile, unbelieving environment",
             "category": "Apostle"
@@ -11,10 +11,10 @@ const SURVEY = {
             "category": "Celibacy"
         }, {
             "question": "I enjoy using my artistic talents to make things that bring glory to God.",
-            "category": "Craftmanship / Artisan"
+            "category": "Craftmanship"
         }, {
             "question": "It is easy to me to perceive whether a person is honest or dishonest",
-            "category": "Discernment / Distinguish Spirits"
+            "category": "Discernment"
         }, {
             "question": "I have spoken words of hope that God confirmed in others by the Holy Spirit",
             "category": "Encouragement"
@@ -35,13 +35,13 @@ const SURVEY = {
             "category": "Healing"
         }, {
             "question": "When i serve the Lord, I really don't care who gets the credit.",
-            "category": "Helps / Service"
+            "category": "Helps"
         }, {
             "question": "Our home is always open to whomever God brings to us",
             "category": "Hospitality"
         }, {
             "question": "I find myself praying when I possibly should be doing other things",
-            "category": "Intercession / Prayer"
+            "category": "Prayer"
         }, {
             "question": "I have had insights of spiritual truth that others have said helped bring them closer to God",
             "category": "Knowledge"
@@ -50,7 +50,7 @@ const SURVEY = {
             "category": "Leadership"
         }, {
             "question": "I feel great compassion for the problems of others.",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "I believe that God can miraculously alter circumstances.",
             "category": "Miracles"
@@ -62,10 +62,10 @@ const SURVEY = {
             "category": "Music"
         }, {
             "question": "I have a heart to help Christians who have lost their way.",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "I choose to live simple lifestyle so I will have more time and money to devote to God's service.",
-            "category": "Poverty (voluntary)"
+            "category": "Poverty"
         }, {
             "question": "I sometimes feel that I know exactly what God wants to do in a ministry at a specific point in time",
             "category": "Prophesy"
@@ -74,10 +74,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "I have interpreted tongues so as to help others worship God without confusion",
-            "category": "Tongues (Interpreting)"
+            "category": "Tongues_Interpreting"
         }, {
             "question": "Sometimes when I pray, it seems as if the Spirit steps in and prays in words I cannot understand",
-            "category": "Tongues (speaking)"
+            "category": "Tongues_speaking"
         }, {
             "question": "I have felt an unusual presence of God and personal confidence when important decisions needed to be made.",
             "category": "Wisdom"
@@ -86,7 +86,7 @@ const SURVEY = {
             "category": "Writing"
         }, {
             "question": "I have been responsible for guiding tasks in my church to success. ",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I feel God has called me to go forth to establish new churches where people have never heard the gospel.",
             "category": "Apostle"
@@ -95,10 +95,10 @@ const SURVEY = {
             "category": "Celibacy"
         }, {
             "question": "I like to make gifts for others that will remind them of God or Jesus.",
-            "category": "Craftmanship / Artisan"
+            "category": "Craftmanship"
         }, {
             "question": "I can sense whether a person is moved by the Holy Spirit, an evil spirit, or by their own flesh",
-            "category": "Discernment / Distinguish Spirits"
+            "category": "Discernment"
         }, {
             "question": "It is a joy to speak uplifting words to people who are discouraged.",
             "category": "Encouragement"
@@ -119,13 +119,13 @@ const SURVEY = {
             "category": "Healing"
         }, {
             "question": "The Spirit sometimes leads me to do a simple thing for someone that touches them deeply",
-            "category": "Helps / Service"
+            "category": "Helps"
         }, {
             "question": "I enjoy greeting and welcoming people to our church or our home",
             "category": "Hospitality"
         }, {
             "question": "I seem to recognize prayer needs before others.",
-            "category": "Intercession / Prayer"
+            "category": "Prayer"
         }, {
             "question": "I am able to understand difficult portions of God's word",
             "category": "Knowledge"
@@ -134,7 +134,7 @@ const SURVEY = {
             "category": "Leadership"
         }, {
             "question": "I have a desire to work with those who have physical or mental problems to alleviate their suffering",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "Others can point to specific instances where my prayers have resulted in what seems impossible happening",
             "category": "Miracles"
@@ -146,10 +146,10 @@ const SURVEY = {
             "category": "Music"
         }, {
             "question": "God has shown fruit in my life in the effective discipline of other believers",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "My desire for spiritual riches always outweighs my desire for money or material possessions",
-            "category": "Poverty (voluntary)"
+            "category": "Poverty"
         }, {
             "question": "I sometimes have a strong sense of what God wants to say to people in response to particular situations.",
             "category": "Prophesy"
@@ -158,10 +158,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "Sometimes when a person speaks in tongues, I get an idea about what God is saying.",
-            "category": "Tongues (Interpreting)"
+            "category": "Tongues_Interpreting"
         }, {
             "question": "I can speak to God in a language I have never learned.",
-            "category": "Tongues (speaking)"
+            "category": "Tongues_speaking"
         }, {
             "question": "Sometimes God gives me an insight into the proper course of action others should take.",
             "category": "Wisdom"
@@ -170,7 +170,7 @@ const SURVEY = {
             "category": "Writing"
         }, {
             "question": "I can serve others by organizing and harnessing their gifts to solve a particular problem",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I have little fear in leading people where God wants them to go.",
             "category": "Apostle"
@@ -179,10 +179,10 @@ const SURVEY = {
             "category": "Celibacy"
         }, {
             "question": "I like to work with my hands to make things to serve God.",
-            "category": "Craftmanship / Artisan"
+            "category": "Craftmanship"
         }, {
             "question": "The difference between truth and error is easily perceived by me. ",
-            "category": "Discernment / Distinguish Spirits"
+            "category": "Discernment"
         }, {
             "question": "I can effectively motivate people to get involved in ministry.",
             "category": "Encouragement"
@@ -203,13 +203,13 @@ const SURVEY = {
             "category": "Healing"
         }, {
             "question": "I have enjoyed doing routine tasks that have led to more effective ministry by others.",
-            "category": "Helps / Service"
+            "category": "Helps"
         }, {
             "question": "I try to make everyone feel welcome and comfortable at church suppers or social events.",
             "category": "Hospitality"
         }, {
             "question": "When I hear a prayer request, I pray for that need for several days at least.",
-            "category": "Intercession / Prayer"
+            "category": "Prayer"
         }, {
             "question": "Through study or experience I have discerned major strategies God seems to use in furthering His Kingdom.",
             "category": "Knowledge"
@@ -218,7 +218,7 @@ const SURVEY = {
             "category": "Leadership"
         }, {
             "question": "I enjoy spending time with a lonely shut-in person or someone in prison.",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "God has used me personally to perform supernatural signs and wonders.",
             "category": "Miracles"
@@ -230,10 +230,10 @@ const SURVEY = {
             "category": "Music"
         }, {
             "question": "I feel that I am responsible to help protect weak Christians from dangerous influences. ",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "A big house, a fancy car, or a large bank account are NOT important to me.",
-            "category": "Poverty (voluntary)"
+            "category": "Poverty"
         }, {
             "question": "Sometimes I have a burning desire to speak God's word even if I know it will not be well received.",
             "category": "Prophesy"
@@ -242,10 +242,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "When others have prayed in tongues, I felt that I understood the meaning of their prayer.",
-            "category": "Tongues (Interpreting)"
+            "category": "Tongues_Interpreting"
         }, {
             "question": "Praying in tongues has been meaningful to me in my personal prayer life.",
-            "category": "Tongues (speaking)"
+            "category": "Tongues_speaking"
         }, {
             "question": "When a person has a problem I can frequently guide him or her to the best Biblical solution.",
             "category": "Wisdom"
@@ -254,7 +254,7 @@ const SURVEY = {
             "category": "Writing"
         }, {
             "question": "I can recognize talents and gifts in others, and find ways of using these for God.",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "God has given me a position of authority over a number of groups of Christians. ",
             "category": "Apostle"
@@ -263,10 +263,10 @@ const SURVEY = {
             "category": "Celibacy"
         }, {
             "question": "I am able to show the glory of God's creation through my art.",
-            "category": "Craftmanship / Artisan"
+            "category": "Craftmanship"
         }, {
             "question": "I can judge well between the truthfulness and error of a given theological statement. ",
-            "category": "Discernment / Distinguish Spirits"
+            "category": "Discernment"
         }, {
             "question": "I have verbally given confidence to the wavering, the troubled, or the discouraged.",
             "category": "Encouragement"
@@ -287,13 +287,13 @@ const SURVEY = {
             "category": "Healing"
         }, {
             "question": "I would rather work in secret than have my work recognized publicly.",
-            "category": "Helps / Service"
+            "category": "Helps"
         }, {
             "question": "I do NOT feel uncomfortable when people drop in unexpected.",
             "category": "Hospitality"
         }, {
             "question": "Praying for others is one of my favourite ways of spending time.",
-            "category": "Intercession / Prayer"
+            "category": "Prayer"
         }, {
             "question": "I sometimes find I know things that I have never learned. which are confirmed by mature believers. ",
             "category": "Knowledge"
@@ -302,7 +302,7 @@ const SURVEY = {
             "category": "Leadership"
         }, {
             "question": "I enjoy visiting in hospitals and retirement homes, and feel I do well in such a ministry. ",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "The Holy Spirit leads me to pray for impossible thing that really come true. ",
             "category": "Miracles"
@@ -314,10 +314,10 @@ const SURVEY = {
             "category": "Music"
         }, {
             "question": "I feel a call from God to be the spiritual leader of a group of Christians. ",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "I am NOT jealous of those who have more material possessions than I do. ",
-            "category": "Poverty (voluntary)"
+            "category": "Poverty"
         }, {
             "question": "People have told me that I have communicated timely messages that must have come directly from the Lord. ",
             "category": "Prophesy"
@@ -326,10 +326,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "When I hear others speak in tongues, I am compelled to explain the meaning.",
-            "category": "Tongues (Interpreting)"
+            "category": "Tongues_Interpreting"
         }, {
             "question": "When I give a public message in tongues. I expect it to be interpreted. ",
-            "category": "Tongues (speaking)"
+            "category": "Tongues_speaking"
         }, {
             "question": "I feel that I have a special insight in selecting the best alternative in a difficult situation. ",
             "category": "Wisdom"
@@ -338,7 +338,7 @@ const SURVEY = {
             "category": "Writing"
         }, {
             "question": "People sometimes look to me for guidance in coordination, organization, and ministry opportunities. ",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "God has used me to bring the gospel to people who have never heard. ",
             "category": "Apostle"
@@ -347,10 +347,10 @@ const SURVEY = {
             "category": "Celibacy"
         }, {
             "question": "I feel compelled to use my hands to craft things that show the beauty of God's creation. ",
-            "category": "Craftmanship / Artisan"
+            "category": "Craftmanship"
         }, {
             "question": "I can quickly recognize whether or not a person's teaching is consistent with God's word.",
-            "category": "Discernment / Distinguish Spirits"
+            "category": "Discernment"
         }, {
             "question": "People who are feeling perplexed sometimes come to me for comfort.",
             "category": "Encouragement"
@@ -371,13 +371,13 @@ const SURVEY = {
             "category": "Healing"
         }, {
             "question": "If someone is facing serious crisis, I enjoy the opportunity to help them.",
-            "category": "Helps / Service"
+            "category": "Helps"
         }, {
             "question": "When people come to our home, they often say they feel at home with us. ",
             "category": "Hospitality"
         }, {
             "question": "Others have told me that my prayers for them have been answered in tangible ways. ",
-            "category": "Intercession / Prayer"
+            "category": "Prayer"
         }, {
             "question": "God has given me words to say witnessing situations that surprise even me. ",
             "category": "Knowledge"
@@ -386,7 +386,7 @@ const SURVEY = {
             "category": "Leadership"
         }, {
             "question": "Sometimes I am overcome with emotion for the person I am praying for. ",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "People have told me that I was God's instrument to bring supernatural change in lives or circumstances. ",
             "category": "Miracles"
@@ -398,10 +398,10 @@ const SURVEY = {
             "category": "Music"
         }, {
             "question": "God has given me the ability to teach and preach spiritual truth. ",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "I feel that I can best fulfill God's calling on my life by living simply.",
-            "category": "Poverty (voluntary)"
+            "category": "Poverty"
         }, {
             "question": "Through God I have revealed specific things that will happen in the future. ",
             "category": "Prophesy"
@@ -410,10 +410,10 @@ const SURVEY = {
             "category": "Teaching"
         }, {
             "question": "My interpretation of tongues has been confirmed by mature believers. ",
-            "category": "Tongues (Interpreting)"
+            "category": "Tongues_Interpreting"
         }, {
             "question": "When I speak in tongues, I believe it is edifying to the group I am with. ",
-            "category": "Tongues (speaking)"
+            "category": "Tongues_speaking"
         }, {
             "question": "People with spiritual problems seem to come to me for advice and counsel. ",
             "category": "Wisdom"
@@ -426,7 +426,7 @@ const SURVEY = {
     "youth": [
         {
             "question": "I like to organize people, tasks, and events.",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I can easily tell the difference between spiritual truth and error, good and evil.",
             "category": "Discernment"
@@ -447,16 +447,16 @@ const SURVEY = {
             "category": "Helps/Serving/Ministering"
         }, {
             "question": "I am a very caring person and always sympathize with other people.",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "I really want others to learn and grow their faith.",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "Education and knowledge are very important to me. ",
             "category": "Teaching"
         }, {
             "question": "I decide things based on facts, not my feelings",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I can usually tell what a person's character is like based upon first impressions. ",
             "category": "Discernment"
@@ -477,16 +477,16 @@ const SURVEY = {
             "category": "Helps/Serving/Ministering"
         }, {
             "question": "I am a patient person, but I respond quickly to help those in need. ",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "I am very protective of people who need my help.",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "I have a very strong desire to study the Bible on a regular basis. ",
             "category": "Teaching"
         }, {
             "question": "When I am given a job, I am able to recruit people to help out, and can explain what needs to be done so they understand what to do.",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I can see through phoniness or deceit before other people can.",
             "category": "Discernment"
@@ -507,16 +507,16 @@ const SURVEY = {
             "category": "Helps/Serving/Ministering"
         }, {
             "question": "I enjoy helping people who others think of as 'undeserving' or beyond help.",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "I like trying to protect others from doing bad things so that they can grow stronger in their faith. ",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "I pay close attention to the words, phrases, and meanings of those who teach. ",
             "category": "Teaching"
         }, {
             "question": "I am a leader at school and church. I can effectively share goals in such a way that others want to carry them out. ",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I tend to see rightness or wrongness in situations.",
             "category": "Discernment"
@@ -537,16 +537,16 @@ const SURVEY = {
             "category": "Helps/Serving/Ministering"
         }, {
             "question": "It is important to me to comfort others when they are hurt. ",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "Relationships are more important to me than other tasks related to a job. I am a 'people' person. ",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "I like to study the Bible one book at a time. ",
             "category": "Teaching"
         }, {
             "question": "I like to set goals and reach them, no matter what others think about my goals and motives. ",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "People usually tell me that I am a good judge of character. ",
             "category": "Discernment"
@@ -567,16 +567,16 @@ const SURVEY = {
             "category": "Helps/Serving/Ministering"
         }, {
             "question": "I can look beyond a person's handicaps or problems to see a life that matters to God. ",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "I think I would enjoy being given the responsibility for the spiritual growth of a group of believers, like a Sunday school class or a Bible Study",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "When I teach Scripture, others are interested and want to learn more. ",
             "category": "Teaching"
         }, {
             "question": "I enjoy learning how organizations function. ",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I know when preaching, teaching, or communication is not true to the Bible. ",
             "category": "Discernment"
@@ -597,16 +597,16 @@ const SURVEY = {
             "category": "Helps/Serving/Ministering"
         }, {
             "question": "I enjoy bringing hope and joy to people living in difficult situations.",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "I can gently help wandering believer get back to faith and fellowship.",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "When I teach, other people usually 'get' what I am trying to say.",
             "category": "Teaching"
         }, {
             "question": "I dream big dreams, but I don't usually tell others about them. ",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I can see sin when others can't",
             "category": "Discernment"
@@ -627,16 +627,16 @@ const SURVEY = {
             "category": "Helps/Serving/Ministering"
         }, {
             "question": "I act on feelings rather than facts. ",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "Teaching the same material over and over is boring. I like to learn and teach new things to others. ",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "I enjoy explaining things to people so that they can grow spiritually and personally. ",
             "category": "Teaching"
         }, {
             "question": "I work best under pressure.",
-            "category": "Admininistration"
+            "category": "Administration"
         }, {
             "question": "I see most actions as right or wrong, and feel the need to correct the wrong. ",
             "category": "Discernment"
@@ -657,10 +657,10 @@ const SURVEY = {
             "category": "Helps/Serving/Ministering"
         }, {
             "question": "Other people know that I care about them. I always try to have a loving attitude.",
-            "category": "Mercy / Compassion"
+            "category": "Mercy"
         }, {
             "question": "I pray a lot for other people.",
-            "category": "Pastoring / Shepherding"
+            "category": "Pastoring"
         }, {
             "question": "I get upset when others misue the Bible by making it say what they want it to say, instead of what it really means. ",
             "category": "Teaching"
