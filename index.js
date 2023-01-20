@@ -29,7 +29,7 @@ const question_component = (question, category, index) => {
 
 const generateCard = (gift) => {
     // Retrieve the gift information
-    const giftInfo = CATEGORY.adult[gift];
+    const giftInfo = CATEGORY[VERSION][gift];
 
     if (!giftInfo) {
         console.error(`Gift ${gift} not found`);
