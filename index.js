@@ -1,7 +1,7 @@
 // identify which version of the quiz to use based on hash
 let VERSION = window.location.hash.substring(1);
 if (VERSION != 'adult' && VERSION != 'youth') {
-    VERSION = 'adult';
+    VERSION = 'masterlife';
 }
 
 const question_component = (question, category, index) => {
@@ -16,7 +16,7 @@ const question_component = (question, category, index) => {
             ${radiobuttons}
             </div>
           <div class="row fs-small mt-1">
-          ${VERSION == 'adult' ? `
+          ${VERSION != 'youth' ? `
             <div class="col">Not me at all</div>
             <div class="col text-end">100% me</div>` : `
             <div class="col">NOPE</div>
