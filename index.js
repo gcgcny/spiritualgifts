@@ -221,3 +221,6 @@ document.getElementById('btnClear').addEventListener('click', (e) => {
     update_main_progress();
 });
 
+if (VERSION == 'masterlife') {
+    document.getElementById('btn_pdf').classList.remove('d-none');
+}
