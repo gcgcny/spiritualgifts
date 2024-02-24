@@ -54,7 +54,7 @@ const CATEGORY = {
             "References": [],
             "SeeAlso": [],
         },
-        "Spiritual discernment": {
+        "Discernment": {
             "Blurb": "Spiritual discernment (Worshiping Gift) - the ability to know which actions and teachings that are claimed to be of God are actually of God rather than human or satanic",
             "Attributes": [],
             "References": [],
