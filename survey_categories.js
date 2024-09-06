@@ -5,96 +5,114 @@ const CATEGORY = {
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"1888054660"
         },
         "Mercy": {
             "Blurb": "Mercy (Serving Gift) - the ability to feel sympathy and compassion for and to meet the needs of persons who suffer distress and crisis from physical, mental, or emotional problems",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"151657800"
         },
         "Giving": {
             "Blurb": "Giving (Serving Gift) - the special ability and desire to contribute material resources to others and the Lord's work with liberality and cheerfulness",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"546481533"
         },
         "Healing": {
             "Blurb": "Healing (Serving Gift) - the God-given ability to help others regain physical, mental, or spiritual health through the direct action of God",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"437278966"
         },
         "Wisdom": {
             "Blurb": "Wisdom (Teaching Gift) - the ability to gain insight into the practical application of God's truths to specific situations",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"141581951"
         },
         "Knowledge": {
             "Blurb": "Knowledge (Teaching Gift) - the ability to discover, understand, clarify, and communicate information that relates to the life, growth, and well-being of the church",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp": "1264814599"
         },
         "Teaching": {
             "Blurb": "Teaching (Teaching Gift) - the special ability to study God's Word and to communicate spiritual truths in such a way that they are relevant to the church's health and ministry and in such a way that others will learn",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp": "777438159"
         },
         "Leadership": {
             "Blurb": "Leadership (Teaching Gift) - the special ability to set goals in accordance with God's will, to communicate those goals to others, and to motivate others to work together to achieve those goals",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp": "70368253"
         },
         "Prophecy": {
             "Blurb": "Prophecy (Worshiping Gift) - the special ability to receive a message from God and then to communicate that message toothers through a divinely anointed utterance",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"762570468"
         },
         "Discernment": {
             "Blurb": "Spiritual discernment (Worshiping Gift) - the ability to know which actions and teachings that are claimed to be of God are actually of God rather than human or satanic",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"2124218295"
         },
         "Exhortation": {
             "Blurb": "Exhortation (Worshiping Gift) - the special ability to comfort and encourage others as well as to motivate others to right actions",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp": "515457841"
         },
         "Shepherding": {
             "Blurb": "Shepherding (Worshiping Gift) - the ability to build up, equip, and guide Christians in spiritual growth and maturity",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"1736554945"
+
         },
         "Faith": {
             "Blurb": "Faith (Witnessing Gift) - the special ability to affirm God's power to intervene in the world today and to be a part of this intervention through prayer and the Holy Spirit's power",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"1541904179"
         },
         "Evangelism": {
             "Blurb": "Evangelism (Witnessing Gift) - the ability to comprehend the lost condition of people in the world and to present Christ effectively so that persons will accept salvation in Jesus",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"1882308817"
         },
         "Apostleship": {
             "Blurb": "Apostleship (Witnessing Gift) - the ability to share God's message of reconciliation; to start new Bible-study groups and churches; or to cross cultural, language, or racial barriers to present the gospel",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"2032165540"
         },
         "Miracles": {
             "Blurb": "Miracles (Witnessing Gift) - the special ability to serve as a human intermediary through whom God works to bring about events that cannot be explained by natural law",
             "Attributes": [],
             "References": [],
             "SeeAlso": [],
+            "resp":"1124159722"
+
         },
         
     },

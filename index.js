@@ -4,6 +4,23 @@ if (VERSION != 'adult' && VERSION != 'youth') {
     VERSION = 'masterlife';
 }
 
+const open_link_window = (url) => {
+    // Open a new tab with the concatenated string as a data URL
+    const dataUrl = 'data:text/plain;charset=utf-8,' + encodeURIComponent(url);
+    console.log(dataUrl)
+    window.open(url, '_blank');
+};
+
+const submit_results_button = (url) => {
+    // Function to handle button click
+    return `
+        <div>
+            <a class="btn btn-primary btnSubmit" href="${url} target="_blank"">Submit Your Top 5 Gifts</a>
+        </div>
+    `
+}
+
+
 const question_component = (question, category, index) => {
     let radiobuttons = Array(10).fill(1).map((_, i) => `<input type="radio" class="btn-check" name="question${index}" autocomplete="off" value="${i}" id="c${index}-${i}" data-category="${category}"><label class="btn btn-outline-secondary btn-sm" for="c${index}-${i}">${i + 1}</label>`).join('');
 
@@ -117,28 +134,53 @@ const score_quiz = () => {
             let value = parseInt(q.value);
             score += value;
         });
-
         // store the score
         scores[category] = score;
+
+        // console.log(category,scores[category])
     });
 
     // write scores to screen
     let max_score = Object.keys(scores).reduce((max, category) => Math.max(max, scores[category]), 0);
     let html_scores = Object.keys(scores).map((category) => {
         let width = scores[category] / max_score * 100;
-        return [width, progress_component(width, category + ': ' + scores[category], category)];
+        console.log(category)
+        return [width, progress_component(width, category + ': ' + scores[category], category),CATEGORY[VERSION][category]["resp"]];
     });
 
     // sort by width
     html_scores.sort((a, b) => b[0] - a[0]);
 
+    // get max array 
+    let max_resps = html_scores.slice(0,5).map((s) => s[2])
+    console.log(max_resps)
+
+    const labels = ["1st", "2nd", "3rd", "4th", "5th"];
+    const baseurl = 'https://docs.google.com/forms/d/e/1FAIpQLScqn67keX2ubHdtRVsMfhe5r0D_OeYP2Prn-FAafZiJsGQqRw/viewform?usp=pp_url'
+    
+    // Combine both arrays into a new string
+    const prefill_str = max_resps.map((id, index) => 
+        `&entry.${id}=${labels[index]}`
+    );
+
+    // Add the new entry at the start of the array
+    prefill_str.unshift(baseurl)
+
+    const final_url = prefill_str.join('');
+
+    console.log(final_url)
+
     // remove width
     html_scores = html_scores.map((s) => s[1]).join('');
 
+    //button
+    let submit_button = submit_results_button(final_url)
+
     const resultsdiv = document.getElementById('results');
     resultsdiv.innerHTML = `<h3 class="mt-5 mb-4">Your personal spiritual gifts inventory </h3>
-    <p><b>(Click to see definitions)</b></p>` + html_scores;
+    <p><b>(Click to see definitions)</b></p>` + html_scores + submit_button;
     resultsdiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
 
     // biblegateway reftagger
     BGLinks.linkVerses();
