@@ -15,7 +15,7 @@ const submit_results_button = (url) => {
     // Function to handle button click
     return `
         <div>
-            <a class="btn btn-primary btnSubmit" href="${url} target="_blank"">Submit Your Top 5 Gifts</a>
+            <a class="btn btn-primary btnSubmit" href="${url}" target="_blank">Submit Your Top 5 Gifts</a>
         </div>
     `
 }
